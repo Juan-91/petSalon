@@ -19,15 +19,25 @@
                 <a href="register.html">Register</a>
             </nav>
         </div>
-        <div class="container">
-            <div class="array" id="array1"></div>
-            <button class="btn-pets" onclick="petsAv()"> See Pets</button>
-            
-        <script src="./scripts/script2.js"></script>
-        </div>
-            
-        </div>
     </header>
+    <main>
+        <div class="container-form">
+            <form class="title-form" action="#">
+                <p>Resgister Form</p>
+                <input placeholder="Pet Name" class="pet-name input" type="text" id="txtName"/>
+                <input placeholder="Age" class="age input" type="number" id="txtAge"/>
+                <input placeholder="Gender" class="gender input" type="text" id="txtGender"/>
+                <input placeholder="Breed" class="breed input" type="text" id="txtBreed"/>
+                
+                <button class="btn-form" type="submit">Submit</button>
+            
+            </form>
+            <button onclick="register()">Register</button>
+        </div>
+    </main>
+    
+    <script src="./scripts/register.js"></script>
 
 </body>
 </html>
+
