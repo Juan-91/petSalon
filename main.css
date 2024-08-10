@@ -19,6 +19,20 @@ a{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: auto;
+    background-color: rgba(255, 255, 0, 0.529);
+}
+
+.container-form{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-color: rgba(255, 255, 0, 0.237);
+}
+
+.R-form{
+    font-size: 20px;
 }
 
 /*Text Styles*/
@@ -36,11 +50,16 @@ a{
     margin-bottom: 5px;
 }
 
+.normal-text{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 .btn{
     display: block;
     width: 200px;
     background-color: black;
-    color: white;
+    color: rgb(228, 224, 224);
     padding: 15px;
     text-align: center;
     margin-top: 30px;
@@ -57,7 +76,7 @@ nav a{
 }
 
 .site-header{
-    background-color: #27e1c270;
+    background-color: #27c5e190;
 }
 
 .array{
@@ -65,10 +84,61 @@ nav a{
 }
 
 .btn-pets{
-    background-color: rgba(238, 109, 3, 0.841);
-    color: white;
+    background-color: rgba(255, 0, 30, 0.529);
+    color: rgb(255, 255, 255);
     padding: 3px;
     border-radius: 5px;
     margin-bottom:15px;
 
 }
+
+.btn-primary{
+    display: block;
+    width: 100px;
+    background-color: black;
+    color: rgb(232, 210, 122);
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+}
+
+.btn-danger{
+    display: block;
+    width: 75px;
+    background-color: black;
+    color: rgb(232, 210, 122);
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.btn-secondary{
+    display: block;
+    width: 75px;
+    background-color: black;
+    color: rgb(232, 210, 122);
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.btn-dark{
+    display: block;
+    width: 75px;
+    background-color: black;
+    color: rgb(232, 210, 122);
+    padding: 5px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.form-control{
+    background-color: rgba(127, 204, 255, 0.176);
+}
+

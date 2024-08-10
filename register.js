@@ -1,10 +1,32 @@
-let pet=[];
+let pets=[];
 
 function Pet(name,age,gender,breed){
     this.name=name;
     this.age=age;
     this.gender=gender;
     this.breed=breed;
+}
+
+function isValid(pet){
+    let validation=true;
+    let inputName=document.getElementById("txtName");
+    let inputAge=document.getElementById("txtAge");
+    
+    inputName.classList.remove("error");
+    inputAge.classList.remove("error");
+
+
+    if(pet.name==""){
+        validation=false;
+        inputName.classList.add("error");
+    }
+
+    if(pet.age==""){
+        validation=false;
+        inputAge.classList.add("error");
+    }
+
+    return validation;
 }
 
 function register(){
@@ -14,17 +36,25 @@ function register(){
     let inputBreed=document.getElementById("txtBreed").value;
 
     let newPet=new Pet(inputName,inputAge,inputGender,inputBreed);
-    
-    console.log(newPet);
-
+    if(isValid(newPet)==true){
+        pets.push(newPet);
+        displayRow();
+    }
+}
+function deletePet(id){
+    console.log("Deleting" +id);
+    pets.splice(id,1);
+    document.getElementById(id).remove(+id);
+    displayRow();
 }
 
 function init(){
+
     let pet1=new Pet("Scooby",10,"Male","Husky");
     let pet2=new Pet("Scrappy",9,"Male","Mixed");
     let pet3=new Pet("Shaggy",11,"Male","Mixed");
-
-    console.log(pet1,pet2,pet3);
+    pets.push(pet1,pet2,pet3);
+    displayRow();
 }
 
 window.onload=init;
