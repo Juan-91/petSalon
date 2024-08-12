@@ -15,24 +15,38 @@ a{
 
 
 /*utilities*/
-.container{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    background-color: rgba(255, 255, 0, 0.529);
+.full-background{
+    background-image: url(/img/registratrion\ form);
 }
 
-.container-form{
+.container{
+    background-color: rgb(255, 225, 2);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    background-color: rgba(255, 255, 0, 0.237);
+    border-radius: 5px;
+}
+
+
+.container-form{
+    background-color: rgba(8, 1, 10, 0.793);
+    color: rgba(202, 192, 81, 0.919);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.form-control{
+    background-color: rgba(255, 244, 127, 0.774);
+    color: black;
 }
 
 .R-form{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /*Text Styles*/
@@ -65,12 +79,24 @@ a{
     margin-top: 30px;
     font-size: 20px;
 }
+.btn2{
+    display: block;
+    width: 250px;
+    background-color: black;
+    color: rgb(228, 224, 224);
+    padding: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 50px;
+}
 
 /*Header*/
 
 nav a{
     color: black;
-    font-weight: 300;
+    font-weight: 300%;
     font-size: 24px;
     margin: 10px 30px;
 }
@@ -79,16 +105,55 @@ nav a{
     background-color: #27c5e190;
 }
 
-.array{
-    font-size: 15px;
+.site-header2{
+    background-color: rgba(255, 225, 2, 0.835);
+    
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+}
+
+
+.numPets{
+    background-color: rgba(246, 246, 246, 0.586);
+    color: rgb(219, 7, 219);
+    text-align: center;
+    width: 100%;
+    font-size:20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 50px;
+    height: auto;
+}
+
+.petsNames{
+   
+    background-color: rgba(9, 1, 1, 0.609);
+    color: rgb(221, 136, 221);
+    text-align: center;
+    width: 100%;
+    font-size:20px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    height: auto;
 }
 
 .btn-pets{
-    background-color: rgba(255, 0, 30, 0.529);
+    background-color: rgba(144, 0, 255, 0.792);
     color: rgb(255, 255, 255);
-    padding: 3px;
+    text-align: center;
+    width: auto;
     border-radius: 5px;
-    margin-bottom:15px;
+    padding: 5px;
+    margin-top: 10px;
+    height: auto;
+
 
 }
 
@@ -138,7 +203,5 @@ nav a{
     font-size: 15px;
 }
 
-.form-control{
-    background-color: rgba(127, 204, 255, 0.176);
-}
+
 

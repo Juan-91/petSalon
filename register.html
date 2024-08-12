@@ -7,56 +7,67 @@
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" 
+        rel="stylesheet">
+    
+        <title>Document</title>
 </head>
+    <body>
+        <header class="site-header2">
+            <div>
+                <h1>The Fashion Pet</h1>
+                <div>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="services.html"> Services</a>
+                        <a href="register.html">Register</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+  <div class="full-background">
+        <main>
+            <div class="container-form">
+                <form action="#">
+                    <b><p class="R-form">Resgister Form</p></b>
 
-<body>
-    <header class="site-header">
-        <div class="container-">
-            <h1>The Fashion Pet</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="register.html">Register</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="container-form">
-            <form action="#">
-                <b><p class="R-form">Resgister Form</p></b>
-
-                <input class="form-control" placeholder="Pet Name"type="text" id="txtName"/>
-                <input class="form-control"  placeholder="Age" type="number" id="txtAge"/>
-                <input class="form-control"  placeholder="Gender"ntype="text" id="txtGender"/>
-                <input class="form-control"  placeholder="Breed" type="text" id="txtBreed"/>
-            
-            </form>
-            <button class="btn btn-primary" onclick="register()">Register</button>
-        </div>
-    </main>
+                    <input class="form-control" placeholder="Pet Name"type="text" id="txtName"/>
+                    <input class="form-control"  placeholder="Age" type="number" id="txtAge"/>
+                    <input class="form-control"  placeholder="Gender"ntype="text" id="txtGender"/>
+                    <input class="form-control"  placeholder="Breed" type="text" id="txtBreed"/>
+                    <input class="form-control"  placeholder="Color" type="text" id="txtColor"/>
+                    <input class="form-control"  placeholder="Animal" type="text" id="txtPet"/>
+                
+                </form>
+                <button class="btn btn-primary" onclick="register()">Register</button>
+            </div>
+        </main>
     
-    <div  class="container">
-        <h2>Registered Pets <span id="totalPet">00</span></h2>
-        <table class="table">
-            <thead>
-              <tr >
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Age</th>
-                <th scope="col">Gender</th>
-                <th scope="col">Breed</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody id="pets">
+        <div  class="container">
+            <h2>Registered Pets <span id="totalPet">00</span></h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Breed</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Animal</th>
 
-            </tbody>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody id="pets">
+
+                </tbody>
+            </table>
+        </div>
     </div>
-    
-    <script src="./scripts/register.js"></script>
-    <script src="./scripts/display.js"></script>
-
-</body>
+        <script src="./scripts/register.js"></script>
+        <script src="./scripts/display.js"></script>
+    </body>
 </html>
 
