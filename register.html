@@ -13,8 +13,8 @@
     
         <title>Document</title>
 </head>
-    <body>
-        <header class="site-header2">
+
+    <header class="site-header2">
             <div>
                 <h1>The Fashion Pet</h1>
                 <div>
@@ -25,49 +25,65 @@
                     </nav>
                 </div>
             </div>
-        </header>
-  <div class="full-background">
-        <main>
+     </header>
+        
+    <body>
+        <div class="full-background">
             <div class="container-form">
                 <form action="#">
-                    <b><p class="R-form">Resgister Form</p></b>
+                    <b><p class="R-form">Register Form</p></b>
 
                     <input class="form-control" placeholder="Pet Name"type="text" id="txtName"/>
                     <input class="form-control"  placeholder="Age" type="number" id="txtAge"/>
                     <input class="form-control"  placeholder="Gender"ntype="text" id="txtGender"/>
                     <input class="form-control"  placeholder="Breed" type="text" id="txtBreed"/>
                     <input class="form-control"  placeholder="Color" type="text" id="txtColor"/>
-                    <input class="form-control"  placeholder="Animal" type="text" id="txtPet"/>
-                
+                    <input class="form-control"  placeholder="Animal" type="text" id="txtAnimal"/>
+                    <div>
+                        <select class="form-select" name="" id="txtServices">
+                            <option value="" select disabled>--select a service--</option>
+                        </select>
+
+                    </div>
                 </form>
                 <button class="btn btn-primary" onclick="register()">Register</button>
             </div>
-        </main>
-    
-        <div  class="container">
-            <h2>Registered Pets <span id="totalPet">00</span></h2>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">Breed</th>
-                    <th scope="col">Color</th>
-                    <th scope="col">Animal</th>
+            <div  class="container">
+                <h2>Registered Pets <span id="totalPet">00</span></h2>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Breed</th>
+                            <th scope="col">Color</th>
+                            <th scope="col">Animal</th>
 
-                    <th>Actions</th>
-                </tr>
-                </thead>
-                <tbody id="pets">
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody id="pets">
 
-                </tbody>
-            </table>
+                        </tbody>
+                    </table>
+            </div>
         </div>
-    </div>
+        <script src="./plugins/jQuery3.7.js"></script>
+        <script src="./scripts/storeManager.js"></script>
         <script src="./scripts/register.js"></script>
         <script src="./scripts/display.js"></script>
     </body>
+    
+<footer>
+    <div class="lower-flex">
+       <nav class="menu-2">
+                <a href="index.html">Home</a>
+                <a href="services.html"> Services</a>
+                <a href="register.html">Register</a>
+        </nav>
+   </div>
+</footer>
 </html>
 

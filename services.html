@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link 
+    rel="stylesheet" 
+    href="./styles/main.css">
+
+    <title>Document</title>
+</head>
+<header class="site-header3">
+    <div>
+        <h1>The Fashion Pet</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="services.html">Service</a>
+                <a href="register.html">Register</a>
+            </nav>
+    </div>
+</header>
+
+<body  class="services-bg">
+    <h2>Services</h2>
+    
+    <div class="services-container" >
+        <div>
+            <li class="listServices">
+                <button class="btn-li" id="wash">Wash, Dry & Brush</button>
+                <button class="btn-li" id="tidy">Tidy Up</button>
+                <button class="btn-li" id="full">Full Grooming</button>
+
+            </li>
+        </div>
+        <div>
+            <div id="op1">
+                <h5>Wash, Dry & Brush: $40</h5>
+                <p>Includes premium bath with coat care shampoo and conditioner, with a thorough brush and fluff dry.
+                    Every dog is washed twice or 3 times.
+                    Nails Trimmed and ears cleaned.</p>
+            </div>
+            <div id="op2">
+                <h5>Tidy Up: $45</h5>
+                <p>Includes premium warm bath and cleaning of the sanitary area, paw pads, shaping of the feet and cleaning up of the face and eyes.
+                    Nails trimmed and ears cleaned.</p>
+            </div>
+            <div id="op3">
+                <h5>Full Grooming: $80</h5>
+                <p>Includes a premium warm bath with premium shampoo and conditioner and berry facial.
+                    Full Body clip with scissor finishing.
+                    Nails trimmed and ears cleaned.</p>
+            </div>
+        </div>
+        <div class="mt-4">
+            <label class="form-label" for="">Description</label>
+            <input class="form-control" type="text" id="txtTitle"  />
+            <small class="titleValidationMsg">This is a required field.</small>
+        </div>
+
+        <div class="">
+            <label class="form-label" for="">Price*</label>
+            <input class="form-control" type="number" id="txtPrice"  />
+            <small class="priceValidationMsg">This is a required field</small>
+        </div>
+        <button onclick="register()" class="btn btn-primary">Register</button>
+    </div>
+    
+    <script src="./plugins/jQuery3.7.js"></script>
+    <script src="./scripts/storeManager.js"></script>
+    <script src="./scripts/services.js"></script>
+</body>
+
+
+</html>

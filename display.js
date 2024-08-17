@@ -13,7 +13,7 @@ function displayRow(){
         <td>${pet.gender}</td>
         <td>${pet.breed}</td>
         <td>${pet.color}</td>
-        <td>${pet.pettype}</td>
+        <td>${pet.animal}</td>
         <td><button class="btn-danger btn-sm" onclick="deletePet(${i});">Delete</button></td>
         <td><button class="btn btn-secondary btn-sm">Edit</button></td>
         <td><button class="btn btn-dark btn-sm">Archive</button></td>
@@ -22,7 +22,6 @@ function displayRow(){
     `;
 
  }
-
     table.innerHTML=row;
     displayInfo();
 }
